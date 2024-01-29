@@ -1,5 +1,5 @@
 '''
-Einfacher QR Tool zur Anzeige und zum Speichern des QR Code
+Einfaches QR Tool zur Anzeige und zum Speichern des QR Code
 https://github.com/wolli112/qr_tool
 
 MIT License
