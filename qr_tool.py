@@ -98,7 +98,7 @@ def zentriere_fenster(fenster):
 # HAUPTPROGRAMM
 # Erstellen des Hauptfenster
 root = tk.Tk()
-root.title("Einfacher QR Tool by wolli112")
+root.title("Einfaches QR Tool by wolli112")
 
 # Erstellen der Texte
 textlabel = tk.Label(root, text="Tool zum Erstellen von QR Codes")
