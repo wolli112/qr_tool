@@ -1,6 +1,6 @@
 # QR Tool - EXE Datei
 
-Die EXE für Windows wurde mit dem "pyinstaller" erstellt
+Die EXE für Windows wurde mit dem "pyinstaller" aus der qr_tool.py erstellt.
 
 https://pypi.org/project/pyinstaller/
 
