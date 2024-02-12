@@ -24,7 +24,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
-__version__ = '0.1'
+__version__ = '0.3'
 __author__ = 'wolli112'
 
 import tkinter as tk
@@ -90,7 +90,7 @@ def zentriere_fenster(fenster):
 
     # x- und y-Koordinaten für die Mitte des Bildschirms berechnen
     x = (bildschirm_breite - fenster.winfo_reqwidth()) // 2
-    y = (bildschirm_hoehe - fenster.winfo_reqheight()) // 2
+    y = (bildschirm_hoehe - fenster.winfo_reqheight()) // 4
 
     # Fensterposition setzen
     root.geometry(f'+{x}+{y}')
@@ -101,17 +101,17 @@ root = tk.Tk()
 root.title("Einfaches QR Tool by wolli112")
 
 # Erstellen der Texte
-textlabel = tk.Label(root, text="Tool zum Erstellen von QR Codes")
+textlabel = tk.Label(root, font=("Arial", 14), text="Tool zum Erstellen von QR Codes")
 textlabel.grid(row=0, column=0, columnspan=2, pady=5)
 
 # Erstellen des Eingabefeldes
-input_text = tk.Label(root, text="Daten eingeben:")
+input_text = tk.Label(root, font=("Arial", 13), text="Daten eingeben:")
 input_text.grid(row=1, column=0, columnspan=1, pady=5)
-input_field = tk.Entry(root, font=("Arial", 14))
+input_field = tk.Entry(root, font=("Arial", 13))
 input_field.grid(row=1, column=1, columnspan=1, pady=5)
 
 # Erstellen des "Generieren" Button
-submit_button = tk.Button(root, text="Generieren", font=("Arial", 14), command=qr_erstellen)
+submit_button = tk.Button(root, text="Generieren", font=("Arial", 13), command=qr_erstellen)
 submit_button.grid(row=3, column=0, columnspan=2, pady=5)
 
 # Feld zum Anzeigen des QR Code
@@ -119,7 +119,7 @@ qr_code_label = tk.Label(root)
 qr_code_label.grid(row=4, column=0, columnspan=2, pady=5)
 
 # Erstellen des "Speichern" Button (anfangs versteckt)
-save_button = tk.Button(root, text="Speichern", font=("Arial", 14), command=speichern)
+save_button = tk.Button(root, text="Speichern", font=("Arial", 13), command=speichern)
 
 # Hauptfenster in der Mitte positionieren
 zentriere_fenster(root)
