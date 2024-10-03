@@ -7,3 +7,7 @@ https://pypi.org/project/pyinstaller/
 https://pyinstaller.org/en/stable/index.html
 
 https://github.com/pyinstaller/pyinstaller
+
+Die CodeSignatur wurde mit dem Windows SignTool angebracht
+
+https://developer.microsoft.com/de-de/windows/downloads/windows-sdk/
